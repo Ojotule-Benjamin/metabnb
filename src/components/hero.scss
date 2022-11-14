@@ -1,0 +1,101 @@
+.heroContainer {
+  margin-top: 7.8rem;
+
+  .heroWrapper {
+    padding: 0 6.25rem;
+    width: 100%;
+    height: 28.7rem;
+    display: flex;
+    align-items: center;
+
+    .left {
+      width: 50%;
+      height: 25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      //background-color: lightgreen;
+
+      h1 {
+        font-family: "Red Rose";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.5rem;
+        //line-height: 120%;
+        letter-spacing: -0.02em;
+        color: #434343;
+
+        span {
+          color: #a02279;
+          font-weight: 700;
+        }
+      }
+      p {
+        font-family: "Red Rose";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        margin-right: 0.63rem;
+        color: #434343;
+      }
+      .searchWrapper {
+        width: 100%;
+        height: 54.08px;
+        //background-color: purple;
+
+        input {
+          width: 390px;
+          height: 54px;
+          border: 1px solid #a3a3a3;
+          background: rgba(247, 247, 247, 0.1);
+          border: 1px solid #a3a3a3;
+          border-radius: 8px 0px 0px 8px;
+        }
+        button {
+          height: 54px;
+          width: 25%;
+          background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
+          border-radius: 0px 8px 8px 0px;
+        }
+      }
+    }
+    .right {
+      width: 50%;
+      height: 28.7rem;
+      display: flex;
+      align-self: flex-start;
+      justify-content: right;
+      gap: 8px;
+
+      .first {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 5px;
+        //margin-top: 20%;
+
+        img {
+          width: 234px;
+          height: 176px;
+          border-radius: 0.94rem;
+        }
+      }
+      .second {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 5px;
+
+        img {
+          width: 234px;
+          height: 176px;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}
