@@ -1,6 +1,6 @@
 const Menu = ({ menuOpen, setMenuOpen }) => {
   return (
-    <div className={"menu " + (menuOpen && "active")}>
+    <div>
       {/*if menuOpen is true add the active classname */}
       <ul>
         <li>
