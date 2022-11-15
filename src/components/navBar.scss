@@ -1,15 +1,25 @@
+@import "../scss/breakpoints";
+
 .container {
   .headerWrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 6.25rem;
-    width: 100%;
-    margin-top: 20px;
-    //margin-top: 2.6rem;
+    margin-top: 10px;
 
-    .headerIcon {
-      box-shadow: inset 4px 4px 44px rgba(96, 96, 96, 0.15);
+    @include md {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 6.25rem;
+      width: 100%;
+      margin-top: 20px;
+      //margin-top: 2.6rem;
+      .headerIcon {
+        @include md {
+          box-shadow: inset 4px 4px 44px rgba(96, 96, 96, 0.15);
+        }
+      }
     }
     .linksWrapper {
       display: flex;
@@ -17,12 +27,16 @@
       justify-content: center;
 
       .navbarItems {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        display: none;
 
-        width: 100%;
-        gap: 28px;
+        @include md {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          gap: 28px;
+        }
+
         a {
           text-decoration: none;
           font-family: "Red Rose";
@@ -47,6 +61,18 @@
         color: #ffffff;
         background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
         border-radius: 10px;
+      }
+      .yo {
+        font-size: 40px;
+        object-fit: cover;
+
+        @include sm {
+          font-size: 70px;
+        }
+
+        @include md {
+          display: none;
+        }
       }
 
       .first {

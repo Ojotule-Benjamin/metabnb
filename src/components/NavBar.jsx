@@ -78,7 +78,6 @@ const NavBar = () => {
             <a href="#home">NFTs</a>
             <a href="#home">Community</a>
             <button onClick={() => setModalIsOpen(true)}>Connect Wallet</button>
-            <Menu />
 
             <Modal
               isOpen={modalIsOpen}
@@ -135,6 +134,7 @@ const NavBar = () => {
               </div>
             </Modal>
           </div>
+          <Menu className="yo" />
         </div>
       </div>
     </header>
