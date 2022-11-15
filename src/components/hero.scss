@@ -39,6 +39,7 @@
       h1 {
         font-size: 2.4rem;
         letter-spacing: -0.03em;
+        margin-top: 20px;
 
         @include md {
           font-family: "Red Rose";
@@ -57,10 +58,7 @@
         }
       }
       p {
-        // font-size: 1.1rem;
-        // line-height: 1.5rem;
-        // margin-top: 10px;
-        // text-align: center;
+        margin-top: 10px;
 
         @include md {
           font-family: "Red Rose";
@@ -116,6 +114,7 @@
       height: auto;
       height: 24rem;
       justify-content: space-evenly;
+      margin-top: 30px;
 
       @include md {
         width: 50%;
