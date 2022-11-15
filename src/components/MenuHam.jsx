@@ -7,16 +7,13 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
           <a href="#intro">Home</a>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#portfolio">Place to stay</a>
         </li>
         <li>
-          <a href="#work">Work</a>
+          <a href="#work">Nfts</a>
         </li>
         <li>
-          <a href="#testimonials">Testimonials</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
+          <a href="#testimonials">Community</a>
         </li>
       </ul>
     </div>
