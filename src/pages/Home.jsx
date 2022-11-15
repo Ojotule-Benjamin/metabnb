@@ -5,6 +5,7 @@ import Inspiration from "../components/Inspiration";
 import "./home.scss";
 import MetaBnb from "../components/MetaBnb";
 import Footer from "../components/Footer";
+import MenuHam from "../components/MenuHam";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Inspiration />
       <MetaBnb />
       <Footer />
+      <MenuHam />
     </header>
   );
 };

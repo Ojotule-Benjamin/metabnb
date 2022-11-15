@@ -5,6 +5,7 @@ import Modal from "react-modal";
 import metamask from "../assets/img/metamask.png";
 import walletconnect from "../assets/img/walletconnect.png";
 import next from "../assets/img/next.png";
+import MenuHam from "../components/MenuHam";
 
 import { Menu } from "@mui/icons-material";
 
@@ -64,7 +65,13 @@ const customStyles = {
 };
 const NavBar = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [isToggle, setIsToggle] = useState(false);
+  const [menuOpen, setMenuOpen] = useState("hello");
 
+  const handleMenu = () => {
+    setIsToggle(!isToggle);
+    setMenuOpen();
+  };
   return (
     <header className="headerContainer">
       <div className="headerWrapper">
@@ -72,6 +79,7 @@ const NavBar = () => {
           <MetabnbIcon />
         </div>
         <div className="linksWrapper">
+          (
           <div className="navbarItems">
             <a href="/">Home</a>
             <a href="/placetostay">Place to stay</a>
@@ -134,7 +142,8 @@ const NavBar = () => {
               </div>
             </Modal>
           </div>
-          <Menu className="yo" />
+          <Menu className="yo" onClick={handleMenu} />
+          {isToggle === true ? <MenuHam /> : null}
         </div>
       </div>
     </header>
