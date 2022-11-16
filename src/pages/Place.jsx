@@ -3,6 +3,7 @@ import "./place.scss";
 import NavBar from "../components/NavBar";
 import sorting from "../assets/img/sorting.png";
 import Inspiration from "../components/Inspiration";
+// import DisplayItems from "../components/DisplayItems";
 import Footer from "../components/Footer";
 
 const Place = () => {
@@ -22,8 +23,8 @@ const Place = () => {
           <img src={sorting} alt="" />
         </button>
       </div>
-
-      <Inspiration className="test" />
+      {/* <DisplayItems /> */}
+      <Inspiration />
       <Footer />
     </div>
   );

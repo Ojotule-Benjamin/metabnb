@@ -5,13 +5,12 @@ import Modal from "react-modal";
 import metamask from "../assets/img/metamask.png";
 import walletconnect from "../assets/img/walletconnect.png";
 import next from "../assets/img/next.png";
-import MenuHam from "../components/MenuHam";
-
 import { Menu } from "@mui/icons-material";
+import SideBar from "./sideNav";
 
 const customStyles = {
   content: {
-    width: "600px",
+    width: "50%",
     height: "326px",
     top: "50%",
     left: "50%",
@@ -23,6 +22,7 @@ const customStyles = {
     borderRadius: "16px",
   },
   first: {
+    width: "auto",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
@@ -36,6 +36,7 @@ const customStyles = {
     marginBottom: "32px",
   },
   second: {
+    width: "auto",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
@@ -50,6 +51,7 @@ const customStyles = {
     background: " #F8F9FA",
   },
   third: {
+    width: "auto",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
@@ -66,25 +68,25 @@ const customStyles = {
 const NavBar = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [isToggle, setIsToggle] = useState(false);
-  const [menuOpen, setMenuOpen] = useState("hello");
 
-  const handleMenu = () => {
+  const handleChange = () => {
     setIsToggle(!isToggle);
-    setMenuOpen();
+    console.log(isToggle);
   };
+
   return (
     <header className="headerContainer">
       <div className="headerWrapper">
         <div className="headerIcon">
           <MetabnbIcon />
         </div>
+
         <div className="linksWrapper">
-          (
-          <div className="navbarItems">
+          <div className="navbarItems ">
             <a href="/">Home</a>
             <a href="/placetostay">Place to stay</a>
-            <a href="#home">NFTs</a>
-            <a href="#home">Community</a>
+            <a href="/">NFTs</a>
+            <a href="/">Community</a>
             <button onClick={() => setModalIsOpen(true)}>Connect Wallet</button>
 
             <Modal
@@ -102,9 +104,10 @@ const NavBar = () => {
                   fontFamily: "Red Rose",
                   fontStyle: "normal",
                   fontWeight: "400",
-                  fontSize: "16px",
+                  fontSize: "1rem",
                   lineHeight: "20px",
                   color: "#333333",
+
                   marginBottom: "16px",
                 }}
               >
@@ -142,10 +145,12 @@ const NavBar = () => {
               </div>
             </Modal>
           </div>
-          <Menu className="yo" onClick={handleMenu} />
-          {isToggle === true ? <MenuHam /> : null}
         </div>
       </div>
+      <div className="menuHamburger">
+        <Menu onClick={handleChange} />
+      </div>
+      {isToggle ? <SideBar /> : null}
     </header>
   );
 };

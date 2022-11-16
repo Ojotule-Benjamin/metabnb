@@ -72,7 +72,7 @@ export const Data = [
     icon: require("./assets/img/starIcon.png"),
   },
   {
-    id: 1,
+    id: 9,
     image: require("./assets/img/inspiration1.png"),
     title1: "Desert king",
     title2: "1MBT per night",
@@ -81,7 +81,7 @@ export const Data = [
     icon: require("./assets/img/starIcon.png"),
   },
   {
-    id: 2,
+    id: 10,
     image: require("./assets/img/inspiration2.png"),
     title1: "Desert king",
     title2: "1MBT per night",
@@ -90,7 +90,7 @@ export const Data = [
     icon: require("./assets/img/starIcon.png"),
   },
   {
-    id: 3,
+    id: 11,
     image: require("./assets/img/inspiration3.png"),
     title1: "Desert king",
     title2: "1MBT per night",
@@ -99,7 +99,7 @@ export const Data = [
     icon: require("./assets/img/starIcon.png"),
   },
   {
-    id: 4,
+    id: 12,
     image: require("./assets/img/inspiration4.png"),
     title1: "Desert king",
     title2: "1MBT per night",
@@ -108,7 +108,7 @@ export const Data = [
     icon: require("./assets/img/starIcon.png"),
   },
   {
-    id: 5,
+    id: 13,
     image: require("./assets/img/inspiration5.png"),
     title1: "Desert king",
     title2: "1MBT per night",
@@ -117,7 +117,7 @@ export const Data = [
     icon: require("./assets/img/starIcon.png"),
   },
   {
-    id: 6,
+    id: 14,
     image: require("./assets/img/inspiration6.png"),
     title1: "Desert king",
     title2: "1MBT per night",
@@ -126,7 +126,7 @@ export const Data = [
     icon: require("./assets/img/starIcon.png"),
   },
   {
-    id: 7,
+    id: 15,
     image: require("./assets/img/inspiration7.png"),
     title1: "Desert king",
     title2: "1MBT per night",
@@ -135,7 +135,7 @@ export const Data = [
     icon: require("./assets/img/starIcon.png"),
   },
   {
-    id: 8,
+    id: 16,
     image: require("./assets/img/inspiration8.png"),
     title1: "Desert king",
     title2: "1MBT per night",
@@ -146,3 +146,5 @@ export const Data = [
 ];
 
 export default Data;
+
+export const Data2 = [];
