@@ -12,21 +12,15 @@ const customStyles = {
     background: " #F8F9FA",
     borderRadius: "10px",
     //width: "100%",
-
+    padding: "20px",
     height: "auto",
     margin: "25%",
     left: "-50%",
-
-    // top: "50%",
-    // left: "50%",
-    // right: "auto",
-    // bottom: "auto",
-    // marginRight: "-50%",
   },
   first: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
     fontFamily: "Red Rose",
     fontStyle: "normal",
     fontWeight: "400",
@@ -38,7 +32,7 @@ const customStyles = {
   second: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
     //border: "1px solid #CFD8DC",
     fontFamily: "Red Rose",
     fontStyle: "normal",
@@ -52,7 +46,7 @@ const customStyles = {
   third: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
     //borderBottom: "1px solid #CFD8DC",
     fontFamily: "Red Rose",
     fontStyle: "normal",
@@ -82,7 +76,14 @@ const SideBar = () => {
           >
             <div style={customStyles.first}>
               <h4>Connect Wallet</h4>
-              <h5 onClick={() => setModalIsOpen(false)}>X</h5>
+              <h5
+                onClick={() => setModalIsOpen(false)}
+                style={{
+                  fontSize: "25px",
+                }}
+              >
+                X
+              </h5>
             </div>
 
             <p
@@ -123,8 +124,8 @@ const SideBar = () => {
                 src={next}
                 alt="metamask"
                 style={{
-                  width: "10px",
-                  height: "10px",
+                  width: "15px",
+                  height: "15px",
                 }}
               />
             </div>
@@ -134,7 +135,7 @@ const SideBar = () => {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  justifyContent: "center",
+                  justifyContent: "space-between",
                 }}
               >
                 <img
@@ -151,8 +152,8 @@ const SideBar = () => {
                 src={next}
                 alt="next"
                 style={{
-                  width: "10px",
-                  height: "10px",
+                  width: "15px",
+                  height: "15px",
                 }}
               />
             </div>
