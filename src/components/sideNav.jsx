@@ -7,20 +7,30 @@ import next from "../assets/img/next.png";
 
 const customStyles = {
   content: {
+    width: "50%",
+    backgroundColor: "red",
     background: " #F8F9FA",
     borderRadius: "10px",
-    width: "100%",
+    //width: "100%",
+
     height: "auto",
-    margin: "auto",
+    margin: "25%",
+    left: "-50%",
+
+    // top: "50%",
+    // left: "50%",
+    // right: "auto",
+    // bottom: "auto",
+    // marginRight: "-50%",
   },
   first: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
     fontFamily: "Red Rose",
     fontStyle: "normal",
-    fontWeight: "300",
-    fontSize: "1rem",
+    fontWeight: "400",
+    fontSize: "15px",
     lineHeight: "30px",
     color: "#333333",
     marginBottom: "10px",
@@ -28,12 +38,12 @@ const customStyles = {
   second: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
     //border: "1px solid #CFD8DC",
     fontFamily: "Red Rose",
     fontStyle: "normal",
-    fontWeight: "700",
-    fontSize: "1.2rem",
+    fontWeight: "200",
+    fontSize: "15px",
     lineHeight: "30px",
     color: "#333333",
     marginBottom: "32px",
@@ -42,12 +52,12 @@ const customStyles = {
   third: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
     //borderBottom: "1px solid #CFD8DC",
     fontFamily: "Red Rose",
     fontStyle: "normal",
     fontWeight: "200",
-    fontSize: "1.2rem",
+    fontSize: "15px",
     lineHeight: "30px",
     color: "#333333",
     background: " #F8F9FA",
@@ -79,8 +89,8 @@ const SideBar = () => {
               style={{
                 fontFamily: "Red Rose",
                 fontStyle: "normal",
-                fontWeight: "400",
-                fontSize: "16px",
+                //fontWeight: "400",
+                fontSize: "12px",
                 lineHeight: "20px",
                 color: "#333333",
                 //marginBottom: "16px",
@@ -103,13 +113,20 @@ const SideBar = () => {
                   src={metamask}
                   alt="metamask"
                   style={{
-                    width: "30px",
-                    height: "30px",
+                    width: "20px",
+                    height: "20px",
                   }}
                 />
                 <h5>Metamask</h5>
               </div>
-              <img src={next} alt="metamask" />
+              <img
+                src={next}
+                alt="metamask"
+                style={{
+                  width: "10px",
+                  height: "10px",
+                }}
+              />
             </div>
 
             <div style={customStyles.third}>
@@ -124,13 +141,20 @@ const SideBar = () => {
                   src={walletconnect}
                   alt="walletconnect"
                   style={{
-                    width: "30px",
-                    height: "30px",
+                    width: "20px",
+                    height: "20px",
                   }}
                 />
                 <h5>WalletConnect</h5>
               </div>
-              <img src={next} alt="next" />
+              <img
+                src={next}
+                alt="next"
+                style={{
+                  width: "10px",
+                  height: "10px",
+                }}
+              />
             </div>
           </Modal>
         </div>

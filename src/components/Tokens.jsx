@@ -7,12 +7,14 @@ const Tokens = () => {
     <div className="tokenContainer">
       <div className="tokenWrapper">
         <div className="tokenItems" id="mbtoken">
-          <MbTokenIcon />
+          <div className="icon">
+            <MbTokenIcon />
+          </div>
           <h3>MBToken</h3>
         </div>
 
         <div className="tokenItems" id="metamask">
-          <MetamaskIcon />
+          <MetamaskIcon className="icon" />
           <h3>metamask</h3>
         </div>
 

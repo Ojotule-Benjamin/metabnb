@@ -2,9 +2,10 @@ import React from "react";
 import "./place.scss";
 import NavBar from "../components/NavBar";
 import sorting from "../assets/img/sorting.png";
-import Inspiration from "../components/Inspiration";
-// import DisplayItems from "../components/DisplayItems";
+
 import Footer from "../components/Footer";
+import Display from "../Display";
+import { StarIcon } from "../assets/svg/Icon";
 
 const Place = () => {
   return (
@@ -23,8 +24,25 @@ const Place = () => {
           <img src={sorting} alt="" />
         </button>
       </div>
-      {/* <DisplayItems /> */}
-      <Inspiration />
+
+      <div className="imagesWrapper">
+        {Display.map((d, index) => (
+          <div className="items" key={index}>
+            <img src={d.image} alt="logo" />
+            <div className="item1" index={index}>
+              <p>{d.title1}</p>
+              <h6>{d.title2}</h6>
+            </div>
+
+            <div className="item2" key={index}>
+              <p>{d.title3}</p>
+              <h6>{d.title4}</h6>
+            </div>
+            <StarIcon />
+          </div>
+        ))}
+      </div>
+
       <Footer />
     </div>
   );

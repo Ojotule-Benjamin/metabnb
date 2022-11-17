@@ -89,10 +89,6 @@
           border-radius: 8px 0px 0px 8px;
           outline: none;
 
-          &:placeholder {
-            margin-left: 50px;
-          }
-
           @include md {
             width: 390px;
             height: 54px;
@@ -102,7 +98,7 @@
             border-radius: 8px 0px 0px 8px;
             outline: none;
 
-            &:placeholder {
+            &::placeholder {
               margin-left: 50px;
             }
           }

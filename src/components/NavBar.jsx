@@ -107,7 +107,6 @@ const NavBar = () => {
                   fontSize: "1rem",
                   lineHeight: "20px",
                   color: "#333333",
-
                   marginBottom: "16px",
                 }}
               >
@@ -147,8 +146,9 @@ const NavBar = () => {
           </div>
         </div>
       </div>
+
       <div className="menuHamburger">
-        <Menu onClick={handleChange} />
+        <Menu onClick={handleChange} style={{ fontSize: "50px" }} />
       </div>
       {isToggle ? <SideBar /> : null}
     </header>

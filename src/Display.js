@@ -1,4 +1,4 @@
-export const Data = [
+export const Display = [
   {
     id: 1,
     image: require("./assets/img/inspiration1.png"),
@@ -73,7 +73,7 @@ export const Data = [
   },
   {
     id: 9,
-    image: require("./assets/img/inspiration1.png"),
+    image: require("./assets/img/inspiration4.png"),
     title1: "Desert king",
     title2: "1MBT per night",
     title3: "2345km away",
@@ -145,4 +145,4 @@ export const Data = [
   },
 ];
 
-export default Data;
+export default Display;
